@@ -16,7 +16,6 @@ Suggests:
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
 LinkingTo: 
-    Rcpp
 Imports: 
     dplyr,
     lubridate,
