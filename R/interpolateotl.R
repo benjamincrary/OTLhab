@@ -23,7 +23,7 @@ interpolateOTL <- function(profiles, criteria, precision) {
 
 
   #create activity IDs
-  data <- profile %>%
+  data <- profiles %>%
     mutate(ActivityID = paste(Station, "-", Date))
 
   #define creteria
