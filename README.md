@@ -14,5 +14,22 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 ## basic example code
+
+#Load example data
+data(lco)
+
+#Set criteria for DO minimum and Temperature maximum
+myCriteria <- setCriteria(6,66)
+
+#Define vertical OTL bands. Interpolate over 0.1 feet. 
+Bands <- interpolateOTL(lco, myCriteria, 0.1)
+
+#Plot OTL bands at Station "LCO2" for 2016 season
+LCO2_2016 <- plotSingle(Bands, "LCO2", 2016)
+
+#Save plot 
+LCO2_2016 + ggsave("pathtofile/output.pdf") 
+
+
 ```
 

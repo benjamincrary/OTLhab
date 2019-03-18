@@ -1,6 +1,6 @@
 #' interpolateOTL
 #'
-#' @param profile Dataframe - vertical profiling data. Fields must include c("Lake", "Date", "Station", "Depth_ft", "Parameter", "Value", "Units")
+#' @param profiles Dataframe - vertical profiling data. Fields must include c("Lake", "Date", "Station", "Depth_ft", "Parameter", "Value", "Units")
 #' @param criteria List - DO and Temperature thresholds. Accepts list output from setCriteria()
 #' @param precision numeric precision for vertical interpolation. 0.1 foot recommended.
 #'
@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-interpolateOTL <- function(profile, criteria, precision) {
+interpolateOTL <- function(profiles, criteria, precision) {
 
   #Verify colnames
 
