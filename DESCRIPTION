@@ -11,11 +11,11 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Suggests: 
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+Imports: 
     dplyr,
     lubridate,
     tidyr,
     zoo,
     ggplot2
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.1.1
-Imports: 

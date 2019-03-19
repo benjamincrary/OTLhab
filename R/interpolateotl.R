@@ -6,6 +6,11 @@
 #'
 #' @return
 #' @export
+#' @importFrom magrittr %>%
+#' @import ggplot2
+#' @import dplyr
+#' @import zoo
+#' @import lubridate
 #'
 #' @examples
 interpolateOTL <- function(profiles, criteria, precision) {

@@ -1,3 +1,19 @@
+#' Title
+#'
+#' @param Bands Dataframe - ouput of interpolateOTL
+#' @param station Character - name of station within Bands
+#' @param year Numeric - year to plot
+#' @param criteria List - output of setCriteria
+#'
+#' @return
+#' @export
+#' @importFrom magrittr %>%
+#' @import ggplot2
+#' @import dplyr
+#' @import zoo
+#' @import lubridate
+#'
+#' @examples
 plotSingle <- function(Bands, station, year, criteria) {
 
   #add feature to read in profiles here, allows plotting samples overtop of bands
