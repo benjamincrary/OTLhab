@@ -11,6 +11,7 @@
 #' @import dplyr
 #' @import zoo
 #' @import lubridate
+#' @import tidyr
 #'
 #' @examples
 interpolateOTL <- function(profiles, criteria, precision) {
