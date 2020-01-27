@@ -24,7 +24,7 @@ myCriteria <- setCriteria(6,66)
 Bands <- interpolateOTL(lco, myCriteria, 0.1)
 
 #Plot OTL bands at Station "LCO2" for 2016 season
-LCO2_2016 <- plotSingle(Bands, "LCO2", 2016)
+LCO2_2016 <- plotSingle(Bands, "LCO2", 2016, myCriteria)
 
 #Save plot 
 LCO2_2016 + ggsave("pathtofile/output.pdf") 
