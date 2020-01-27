@@ -30,6 +30,9 @@ LCO2_2016 <- plotSingle(Bands, "LCO2", 2016)
 #Save plot 
 LCO2_2016 + ggsave("pathtofile/output.pdf") 
 
+#Plot OTL bands for multiple stations and multiple seasons
+majorbasins <- plotMultiple(plotMultiple(Bands, c("LCO2", "LCO3", "LCO4"), c(2015,2016,2017,2018),myCriteria))
+
 
 ```
 
